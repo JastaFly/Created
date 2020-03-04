@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Создание бухгалтера</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.min.css" >
+</head>
+<body onload="load_img()">
+   <header>
+    <div class="row header-group">
+        <div class="col-xl-6 col-lg-6">
+            <p class="big-text">
+                Занимайтесь <span class="orange">БИЗНЕСОМ</span>, а наши бухгалтеры возьмут всю <span class="orange">РУТИНУ</span> на себя
+            </p>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+           <div  class="logo_group">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Логотип" class="logo__img">
+                <div class="logo__text-group">
+                    <p class="logo__text logo__text_big">Главный бухгалтер</p>
+                    <p class="logo__text">Оказание бухгалтерских услуг</p>
+                </div>
+            </div>
+            <span class="simple_text our">Наши бухгалтеры</span>
+            </div>
+        </div>
+    </div>
+        </header>
+        <main>
+    <div class="row point-line">
+        <div class="col-xl-6 col-lg-6">
+            <div class="point" onmouseover="show_desc(this, 1)" onmouseout="hide_desc(this)"></div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <p class="description">
+                Ежемесячный анализ руководителю
+            </p>
+        </div>
+    </div>
+    <div class="row point-line">
+       <div class="col-xl-4 col-lg-4">
+       <p class="simple_text our-company">Ваша компания</p>
+       </div>
+        <div class="col-xl-2 col-lg-2">
+            <div class="point point-2" onmouseover="show_desc(this, 2)" onmouseout="hide_desc(this)"></div>
+        </div>
+        <div class="col-xl-5 col-lg-5">
+            <p class="description description-2">
+              Берем материальную ответственность на себя
+            </p>
+        </div>
+    </div>
+    <div class="row point-line">
+        <div class="col-xl-6 col-lg-6">
+            <div class="point" onmouseover="show_desc(this, 3)" onmouseout="hide_desc(this, 3)"></div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <p class="description">
+                Полная безопасность данных
+            </p>
+        </div>
+    </div>
+    <div class="row point-line">
+        <div class="col-xl-6 col-lg-6">
+            <div class="point" onmouseover="show_desc(this, 4)" onmouseout="hide_desc(this)"></div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <p class="description">
+                Персональный менеджер
+            </p>
+        </div>
+    </div>
+     <div class="row point-line">
+       <div class="col-xl-4 col-lg-4 order-sm-last order-last order-lg-first order-xl-first">
+       <p class="simple_text offer">Попробуйте первые 3 месяца со скидкой 50%</p>
+       </div>
+        <div class="col-xl-2 col-lg-2">
+            <div class="point point-2 " onmouseover="show_desc(this, 5)" onmouseout="hide_desc(this)"></div>
+        </div>
+        <div class="col-xl-5 col-lg-5">
+            <p class="description">
+              Постановка и восстановление бухучета
+            </p>
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-xl-3 col-lg-3 button">
+            <span class="button__img"></span>
+            <span class="bottom-text" onclick="show_on(0)">Попробовать</span>
+        </div>
+        <div class="col-xl-3 col-lg-3 adress">
+            <span class="icon adress__icon"> </span>
+            <div class="adress__text">
+            <p class="adress__small-text">г. Пенза</p>
+            <p class="adress__big-text">ул. Пушкина, 3, оф. 522</p>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 telephone">
+            <span class="icon telephone__img"></span>
+            <span class="bottom-text" href="tel:+78412394553">8(8412)394-553</span>
+        </div>
+        <div class="col-xl-3 col-lg-3 mail">
+            <span class="icon mail__img"></span>
+            <span class="bottom-text" href="mail:gb58@inbox.ru">gb58@inbox.ru</span>
+        </div>
+    </div>
+    <div class="shadow">
+          </div>
+        <div class="modal-window">
+             <span class="modal-window__cross" onclick="show_off(0)">&times;</span>
+            <p class="modal-window__title">Получить скидку 50% на услуги бухгалтера</p>
+            <form action="">
+                <input type="text" placeholder="Ваше имя" class="text-input">
+                <input type="text" placeholder="Телефоне" class="text-input">
+                <p class="modal-window__privaci">Отправляя данные, я согласен с Политикой обработки персональных данных</p>
+                <input type="button" class="modal-window__button" value="Отправить">
+            </form>
+        </div>
+          <div class="modal-window thank">
+             <span class="modal-window__cross" onclick="show_off(1)">&times;</span>
+            <p class="modal-window__title">Спасибо!</p>
+            <p class="thank__text">
+                Мы скоро перезвоним Вам для уточнения деталей.
+            </p>
+        </div>
+        <div class="arrow">&darr;</div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
