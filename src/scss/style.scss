@@ -12,9 +12,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
-header {
-    margin-bottom: 7%;
+main {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    padding-top: 7%;
 }
 
 .big-text {
@@ -227,9 +229,8 @@ header {
         color: #ff5600;
     }
 
-    &:hover .adress__icon {
-        background-image: url(../img/pin_hov.svg);
-        background-repeat: no-repeat;
+    &:hover svg path {
+        fill: #ff5600;
     }
 
     &__small-text {
@@ -261,8 +262,8 @@ header {
         color: #ff5600;
     }
 
-    &:hover .telephone__img {
-        background-image: url(../img/phone_hov.svg);
+    &:hover svg path {
+       fill: #ff5600;
     }
 
     .telephone__number {
@@ -290,7 +291,6 @@ header {
     align-items: center;
 
     &__img {
-        background-image: url(../img/mail.svg);
         background-repeat: no-repeat;
         margin-top: 15px;
     }
@@ -299,8 +299,8 @@ header {
         color: #ff5600;
     }
 
-    &:hover .mail__img {
-        background-image: url(../img/mail_hov.svg);
+    &:hover svg path {
+        fill: #ff5600;
     }
 }
 
@@ -388,6 +388,7 @@ header {
     padding-left: 40px;
     margin-bottom: 25px;
     width: 100%;
+    outline: none;
 
     &:focus {
         border: 1px solid #ff5600;
@@ -472,10 +473,6 @@ header {
     .our-company {
         left: 20%;
     }
-
-    header {
-        margin-bottom: 5%;
-    }
 }
 
 @media screen and (max-width: 1536px) {
@@ -498,7 +495,7 @@ header {
 
 @media screen and (max-width: 1440px) {
     .big-text {
-        font-size: 44px;
+        font-size: 42px;
     }
 
     .logo_group {
@@ -528,7 +525,7 @@ header {
 
 @media screen and (max-width: 1366px) {
     .big-text {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .logo_group {
@@ -547,12 +544,16 @@ header {
         left: 0%;
     }
 
-    header {
-        margin-bottom: 0%;
-    }
-
     .point-line {
         margin-bottom: 3%;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .adress__big-text {
+        font-size: 14px;
+    }
+    .adress__small-text {
+        font-size: 14px;
     }
 }
 
@@ -569,10 +570,6 @@ header {
         font-size: 14px;
     }
 
-    header {
-        margin-bottom: 3%;
-    }
-
     .modal-window {
         left: 20%;
         top: 5%;
@@ -581,7 +578,7 @@ header {
 
 @media screen and (max-width: 1125px) {
     .big-text {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .our {
@@ -597,6 +594,9 @@ header {
     }
 
     .adress__small-text {
+        font-size: 12px;
+    }
+    .adress__big-text {
         font-size: 12px;
     }
 
@@ -664,7 +664,7 @@ header {
     }
 }
 
-@media screen and (max-width: 823px) {
+@media screen and (max-width: 992px) {
     .logo {
         position: fixed;
         top: 30px;
@@ -677,6 +677,9 @@ header {
     body {
         padding-top: 25%;
         padding-left: 3%;
+    }
+    main {
+        display: block;
     }
 
     .big-text {
@@ -796,7 +799,7 @@ header {
         font-size: 54px;
         animation: trambling-animation 1.5s ease infinite forwards;
         position: fixed;
-        top: 80%;
+        top: 91%;
         left: 48%;
     }
 
@@ -1138,138 +1141,30 @@ header {
         left: 45%;
     }
 }
-
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-    header {
-        margin-bottom: 25%;
-    }
-
-    .point-line {
-        margin-bottom: 10%;
-    }
-
-    .modal-window {
-        top: 15%;
-    }
-    .icon {
-        width: 25px;
-        height: 25px;
-        margin-right: 5%;
-    }
-    .adress__big-text {
-        font-size: 12px;
+@media screen and (max-width: 320px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 768px) {
-      header {
-        margin-bottom: 5%;
-    }
-    .point-line {
-        margin-bottom: 4%;
+@media screen and (max-height: 900px) {
+    main {
+        padding-top: 5%;
     }
 }
-
-@media screen and (max-width: 812px) and (max-height: 375px) {
-    .modal-window__title {
-        font-size: 24px;
-    }
-
-    .text-input {
-        font-size: 16px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .modal-window__button {
-        font-size: 18px;
+@media screen and (max-height: 768px) {
+    main {
+        padding-top: 1%;
     }
 }
-
-@media screen and (max-width: 736px) and (max-height: 414px) {
-    .modal-window {
-        left: 2%;
-        height: 93%;
-        padding-top: 25px;
-
-        &__privaci {
-            font-size: 14px;
-        }
-
-        &__title {
-            font-size: 26px;
-            margin-top: 0;
-            margin-bottom: 0px;
-
-        }
-
-        &__button {
-            font-size: 20px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-    }
-
-    .our {
-        right: 1%;
-    }
-
-    .icon {
-        height: 30px;
-        width: 30px;
-        margin-right: 5%;
-    }
-
-    .text-input {
-        font-size: 18px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 10px;
-    }
-
-    .thank {
-        background-size: contain;
+@media screen and (max-height: 414px) {
+    .arrow {
+        top: 85%;
     }
 }
-
-@media screen and (max-width: 731px) and (max-height: 411px) {
-    .modal-window {
-        left: 3%;
-    }
-}
-
-@media screen and (max-width: 667px) and (max-height: 375px) {
-    .modal-window {
-        top: 5%;
-
-        &__button {
-            font-size: 18px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-        }
-
-        &__privaci {
-            margin-bottom: 5px;
-        }
-        &__title {
-            font-size: 22px;
-        }
-    }
-
-    .text-input {
-        font-size: 16px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-bottom: 5px;
-    }
-}
-@media screen and (max-width: 568px) and (max-height: 320px)  {
-    .modal-window__title {
-        font-size: 18px;
-    }
-    .text-input {
-        font-size: 14px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+@media screen and (max-height: 375px) {
+    .arrow {
+        top: 80%;
     }
 }

@@ -4,131 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Создание бухгалтера</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/style.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body onload="load_img()">
-   <header>
-    <div class="row header-group">
-        <div class="col-xl-6 col-lg-6">
-            <p class="big-text">
-                Занимайтесь <span class="orange">БИЗНЕСОМ</span>, а наши бухгалтеры возьмут всю <span class="orange">РУТИНУ</span> на себя
-            </p>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-           <div  class="logo_group">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Логотип" class="logo__img">
-                <div class="logo__text-group">
-                    <p class="logo__text logo__text_big">Главный бухгалтер</p>
-                    <p class="logo__text">Оказание бухгалтерских услуг</p>
+<header>
+    <div class="container-fluid">
+        <div class="row header-group">
+            <div class="col-xl-6 col-lg-6">
+                <p class="big-text">
+                    Занимайтесь <span class="orange">БИЗНЕСОМ</span>, а наши бухгалтеры возьмут всю <span
+                        class="orange">РУТИНУ</span> на себя
+                </p>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="logo_group">
+                    <div class="logo">
+                        <!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In  -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" width="174.6px"
+                             height="178.15px" viewBox="0 0 174.6 178.15"
+                             style="enable-background:new 0 0 174.6 178.15;" xml:space="preserve" class="logo__img">
+                            <defs>
+</defs>
+                            <path class="st0" d="M104.5,23.35c-7-3.3-9.5-5.9-9-6.8l7.5-16.1c0.4-1,5.4-0.4,11.1,2.3s9.4,6.1,8.9,7l-7.5,16.1
+	C115.1,26.85,111.5,26.65,104.5,23.35z"/>
+                            <path class="st0" d="M73.4,90.25c-5.9-2.8-9.2-6.4-8.8-7.3l28.8-61.7c0.1-0.1,0.2-0.1,0.3-0.1c0,0,0.1,0,0.1,0.1
+	c0.9,1.1,4.8,3.8,9.1,5.8s8.8,3.4,10.3,3.3c0.1,0,0.2,0.1,0.3,0.2v0.1l-28.9,61.6C84.2,93.15,78.8,92.75,73.4,90.25z"/>
+                            <path class="st0" d="M64.2,113.95l17-15.5c0.9-0.8,1.8-1.7,0.6-2.3c-3.5,0-7-0.9-10.1-2.4c-6.1-2.9-8.3-6.2-8.3-6.2
+	c-1.2-0.7-1.3,0.7-1.3,1.9l-0.9,23c0,1,0.8,1.9,1.8,1.9C63.3,114.45,63.8,114.35,64.2,113.95z"/>
+                            <path class="st0" d="M59.9,116.55c-0.1-0.1-0.2-0.2-0.3-0.1l-0.1,0.1l-0.9,3.1c-0.1,0.5,0.2,1,0.7,1.1c0.3,0.1,0.7-0.1,0.9-0.3
+	l1.8-2.6c0.1-0.1,0.1-0.2,0-0.3c-0.1,0-0.1-0.1-0.2,0C61,117.65,60.3,117.25,59.9,116.55z"/>
+                            <path class="st0" d="M5.9,139.35l82.9,30.2c2.3,0.8,3.5,3.4,2.6,5.7l0,0c-0.8,2.3-3.4,3.5-5.7,2.6l-82.8-30.2
+	c-2.3-0.8-3.5-3.4-2.6-5.7l0,0C1.1,139.65,3.6,138.45,5.9,139.35z"/>
+                            <path class="st0" d="M171.7,147.65l-82.9,30.2c-2.3,0.8-4.8-0.3-5.7-2.6l0,0c-0.8-2.3,0.3-4.8,2.6-5.7l82.9-30.2
+	c2.3-0.8,4.8,0.3,5.7,2.6l0,0C175.2,144.25,174,146.75,171.7,147.65z"/>
+                            <path class="st0" d="M86.3,164.45l-76.4-27.8c-2.1-0.8-3.8-1.4-3.1-3.5l1.6-3.9c1-2.2,1.5-2.9,4.6-3.6c4.1-0.8,26.9,0.2,43.4,6.1
+	c15.8,5.7,35,21.3,35,23.8v6.5C90.7,164.15,88.4,165.25,86.3,164.45L86.3,164.45z"/>
+                            <path class="st0" d="M89,164.45l76.3-27.8c2.1-0.8,3.8-1.4,3-3.5l-1.6-3.9c-1-2.2-1.5-2.9-4.6-3.6c-4.1-0.8-26.9,0.2-43.4,6.1
+	c-15.8,5.7-34.9,21.3-34.9,23.8v6.5C84.5,164.15,86.9,165.25,89,164.45L89,164.45z"/>
+</svg>
+                        <div class="logo__text-group">
+                            <p class="logo__text logo__text_big">Главный бухгалтер</p>
+                            <p class="logo__text">Оказание бухгалтерских услуг</p>
+                        </div>
+                    </div>
+                    <span class="simple_text our">Наши бухгалтеры</span>
                 </div>
             </div>
-            <span class="simple_text our">Наши бухгалтеры</span>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row point-line">
+            <div class="col-xl-6 col-lg-6">
+                <div class="point" onmouseover="show_desc(this, 1)" onmouseout="hide_desc(this)"></div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <p class="description">
+                    Ежемесячный анализ руководителю
+                </p>
             </div>
         </div>
-    </div>
-        </header>
-        <main>
-    <div class="row point-line">
-        <div class="col-xl-6 col-lg-6">
-            <div class="point" onmouseover="show_desc(this, 1)" onmouseout="hide_desc(this)"></div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <p class="description">
-                Ежемесячный анализ руководителю
-            </p>
-        </div>
-    </div>
-    <div class="row point-line">
-       <div class="col-xl-4 col-lg-4">
-       <p class="simple_text our-company">Ваша компания</p>
-       </div>
-        <div class="col-xl-2 col-lg-2">
-            <div class="point point-2" onmouseover="show_desc(this, 2)" onmouseout="hide_desc(this)"></div>
-        </div>
-        <div class="col-xl-5 col-lg-5">
-            <p class="description description-2">
-              Берем материальную ответственность на себя
-            </p>
-        </div>
-    </div>
-    <div class="row point-line">
-        <div class="col-xl-6 col-lg-6">
-            <div class="point" onmouseover="show_desc(this, 3)" onmouseout="hide_desc(this, 3)"></div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <p class="description">
-                Полная безопасность данных
-            </p>
-        </div>
-    </div>
-    <div class="row point-line">
-        <div class="col-xl-6 col-lg-6">
-            <div class="point" onmouseover="show_desc(this, 4)" onmouseout="hide_desc(this)"></div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <p class="description">
-                Персональный менеджер
-            </p>
-        </div>
-    </div>
-     <div class="row point-line">
-       <div class="col-xl-4 col-lg-4 order-sm-last order-last order-lg-first order-xl-first">
-       <p class="simple_text offer">Попробуйте первые 3 месяца со скидкой 50%</p>
-       </div>
-        <div class="col-xl-2 col-lg-2">
-            <div class="point point-2 " onmouseover="show_desc(this, 5)" onmouseout="hide_desc(this)"></div>
-        </div>
-        <div class="col-xl-5 col-lg-5">
-            <p class="description">
-              Постановка и восстановление бухучета
-            </p>
-        </div>
-    </div>
-    <div class="row bottom">
-        <div class="col-xl-3 col-lg-3 button">
-            <span class="button__img"></span>
-            <span class="bottom-text" onclick="show_on(0)">Попробовать</span>
-        </div>
-        <div class="col-xl-3 col-lg-3 adress">
-            <span class="icon adress__icon"> </span>
-            <div class="adress__text">
-            <p class="adress__small-text">г. Пенза</p>
-            <p class="adress__big-text">ул. Пушкина, 3, оф. 522</p>
+        <div class="row point-line">
+            <div class="col-xl-4 col-lg-4">
+                <p class="simple_text our-company">Ваша компания</p>
+            </div>
+            <div class="col-xl-2 col-lg-2">
+                <div class="point point-2" onmouseover="show_desc(this, 2)" onmouseout="hide_desc(this)"></div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+                <p class="description description-2">
+                    Берем материальную ответственность на себя
+                </p>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-3 telephone">
-            <span class="icon telephone__img"></span>
-            <span class="bottom-text" href="tel:+78412394553">8(8412)394-553</span>
+        <div class="row point-line">
+            <div class="col-xl-6 col-lg-6">
+                <div class="point" onmouseover="show_desc(this, 3)" onmouseout="hide_desc(this, 3)"></div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <p class="description">
+                    Полная безопасность данных
+                </p>
+            </div>
         </div>
-        <div class="col-xl-3 col-lg-3 mail">
-            <span class="icon mail__img"></span>
-            <span class="bottom-text" href="mail:gb58@inbox.ru">gb58@inbox.ru</span>
+        <div class="row point-line">
+            <div class="col-xl-6 col-lg-6">
+                <div class="point" onmouseover="show_desc(this, 4)" onmouseout="hide_desc(this)"></div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <p class="description">
+                    Персональный менеджер
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="shadow">
-          </div>
+        <div class="row point-line">
+            <div class="col-xl-4 col-lg-4 order-sm-last order-last order-lg-first order-xl-first">
+                <p class="simple_text offer">Попробуйте первые 3 месяца со скидкой 50%</p>
+            </div>
+            <div class="col-xl-2 col-lg-2">
+                <div class="point point-2 " onmouseover="show_desc(this, 5)" onmouseout="hide_desc(this)"></div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+                <p class="description">
+                    Постановка и восстановление бухучета
+                </p>
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-xl-3 col-lg-3 button" onclick="show_on(0)">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55.55px"
+                     height="58.93px" viewBox="0 0 55.55 58.93" style="enable-background:new 0 0 55.55 58.93;" xml:space="preserve" class="button__img">
+                    <defs>
+</defs>
+                    <g>
+	<g id="Capa_1_1_">
+		<path class="st0" d="M27.35,26.01c-0.53,0.15-0.84,0.7-0.69,1.23c0,0,0,0,0,0.01c0,0.09,2.7,9.59,2,30.68c0,0.55,0.45,1,1,1l0,0
+			c0.55,0,1-0.45,1-1c0.75-21.41-1.92-30.92-2-31.31c-0.18-0.52-0.75-0.8-1.27-0.63C27.38,26,27.37,26,27.35,26.01z"/>
+        <path class="st0" d="M52.49,16.49C46.71,2.8,30.95-3.63,17.23,2.09c-1.79,0.75-3.52,1.65-5.15,2.71c-0.46,0.3-0.6,0.92-0.3,1.38
+			c0.3,0.46,0.92,0.6,1.38,0.29c0,0,0,0,0.01,0c1.53-0.98,3.14-1.83,4.82-2.53c12.7-5.3,27.3,0.65,32.66,13.33
+			c1.63,3.85,2.51,11,2.89,14.84c0.05,0.51,0.48,0.9,1,0.9h0.1c0.55-0.05,0.95-0.54,0.9-1.09C55.05,27.01,54.14,20.38,52.49,16.49z"
+        />
+        <path class="st0" d="M9.11,9.72c0.42-0.36,0.48-0.99,0.12-1.41C8.88,7.89,8.25,7.83,7.82,8.19C7.78,8.22,7.75,8.26,7.71,8.3
+			C2.33,13.6-3.01,23.45,1.99,40.29c0.16,0.53,0.71,0.83,1.24,0.67s0.83-0.71,0.68-1.24C0.16,27.14,1.99,16.77,9.11,9.72z"/>
+        <path class="st0" d="M28.39,6.01c-3.03-0.12-6.05,0.43-8.85,1.61C9.73,11.71,4.53,22.48,7.41,32.71c0.32,1.05,0.57,2.11,0.75,3.19
+			c0.35,2.45,0.37,7,0.37,14.11c0,0.55,0.45,1,1,1s1-0.45,1-1c0-7.46,0-11.81-0.39-14.4c-0.2-1.16-0.46-2.31-0.8-3.44
+			c-2.86-10.1,3.01-20.6,13.11-23.46c1.91-0.54,3.89-0.78,5.87-0.7c7.11,0.26,15.17,6.52,17.6,13.69
+			c2.07,6.21,2.13,16.77,1.86,26.31c-0.02,0.55,0.42,1.01,0.97,1.03c0.55,0.02,1.01-0.42,1.03-0.97c0.27-9.69,0.24-20.48-2-27
+			C45.1,13.06,36.39,6.31,28.39,6.01z"/>
+        <path class="st0" d="M27.62,12.01c-1.08,0-2.16,0.12-3.21,0.35c-0.55,0.12-0.9,0.66-0.78,1.22s0.66,0.9,1.22,0.78l0,0
+			c6.12-1.34,12.32,1.86,14.76,7.63c2.43,5.74,2.58,15,2,31c0,0.55,0.45,1,1,1l0,0c0.55,0,1-0.45,1-1
+			c0.59-16.72,0.41-25.75-2.18-31.88C39.06,15.58,33.63,12,27.62,12.01z"/>
+        <path class="st0" d="M20.2,16.35c0.45-0.32,0.56-0.94,0.25-1.39c0,0,0,0-0.01-0.01c-0.32-0.45-0.94-0.56-1.39-0.24
+			c-5.15,3.62-7.39,10.56-5.57,17.3c1.44,6.23,2.11,12.61,2,19c0,0.55,0.45,1,1,1c0.55,0,1-0.45,1-1c0-11.81-2-19.23-2.12-19.54
+			C13.81,25.56,15.73,19.48,20.2,16.35z"/>
+        <path class="st0" d="M37.53,48.01c0-0.55-0.45-1-1-1l0,0c-0.55,0-1,0.45-1,1c0,0.75,0,1.85,0.05,3c0,1.72,0.08,3.68,0,4.94
+			c0,0.55,0.45,1,1,1l0,0c0.55,0,1-0.45,1-1c0-1.31,0-3.3,0-5.05C37.55,49.83,37.53,48.75,37.53,48.01z"/>
+        <path class="st0" d="M27.62,19.01c-1.06,0-2.1,0.21-3.08,0.62c-3.93,1.71-5.85,6.18-4.4,10.21c0.76,2.29,1.39,14.27,1.39,26.17
+			c0,0.55,0.45,1,1,1s1-0.45,1-1c0-10.71-0.57-24-1.49-26.79c-1.22-3.08,0.29-6.57,3.37-7.79c0.7-0.28,1.45-0.42,2.21-0.42
+			c2.41,0,4.59,1.45,5.53,3.67c1.84,4.42,2.43,12.42,2.56,18.33c0,0.55,0.45,1,1,1l0,0c0.55,0,1-0.45,1-1
+			c-0.14-6.13-0.72-14.4-2.72-19.12C33.74,20.93,30.84,19.01,27.62,19.01z"/>
+	</g>
+</g>
+</svg>
+                <span class="bottom-text">Попробовать</span>
+            </div>
+            <div class="col-xl-3 col-lg-3 adress">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                     height="60px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"  class="icon adress__icon">
+                    <defs>
+</defs>
+                    <g>
+	<g id="Capa_1_1_">
+		<path class="st0" d="M30,26c3.87,0,7-3.13,7-7s-3.13-7-7-7s-7,3.13-7,7S26.13,26,30,26z M30,14c2.76,0,5,2.24,5,5s-2.24,5-5,5
+			s-5-2.24-5-5S27.24,14,30,14z"/>
+        <path class="st0" d="M29.8,54.8l15.3-22.2c5.8-7.7,4.9-20.3-1.8-27C39.74,1.99,34.87-0.03,29.8,0c-5.09,0.01-9.98,2.02-13.6,5.6
+			c-6.7,6.7-7.5,19.3-1.8,27L29.8,54.8z M17.7,7c3.22-3.2,7.57-4.99,12.1-5c4.56,0.02,8.93,1.82,12.2,5c6,6,6.8,17.4,1.6,24.4
+			L29.8,51.2L16.1,31.4C10.9,24.5,11.6,13.1,17.7,7z"/>
+        <path class="st0" d="M42.1,43c-0.55-0.06-1.04,0.34-1.1,0.89c0,0,0,0.01,0,0.01c-0.09,0.51,0.25,1,0.77,1.09
+			C41.81,44.99,41.86,45,41.9,45C52.4,46.2,58,49.6,58,51.5c0,2.7-10.7,6.5-28,6.5S2,54.2,2,51.5c0-1.9,5.6-5.3,16.1-6.5
+			c0.55-0.06,0.96-0.55,0.9-1.1c-0.06-0.55-0.55-0.96-1.1-0.9C7.4,44.2,0,47.7,0,51.5C0,55.7,10.3,60,30,60s30-4.3,30-8.5
+			C60,47.7,52.6,44.2,42.1,43z"/>
+	</g>
+</g>
+</svg>
+                <div class="adress__text">
+                    <p class="adress__small-text">г. Пенза</p>
+                    <p class="adress__big-text">ул. Пушкина, 3, оф. 522</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 telephone">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="462.98px" height="463.06px" viewBox="0 0 462.98 463.06" style="enable-background:new 0 0 462.98 463.06;"
+                     xml:space="preserve" class="icon telephone__img">
+                    <defs>
+</defs>
+                    <g>
+	<g>
+		<path class="st0" d="M462.68,381.09c-1.42-11.05-7.94-20.8-17.62-26.32L330.84,289c-14.03-8.05-31.71-5.71-43.16,5.71l-22.5,22.5
+			c-5.94,5.97-15.43,6.5-22,1.23c-18.13-14.62-35.45-30.21-51.9-46.69c-16.48-16.45-32.07-33.77-46.69-51.9
+			c-5.27-6.57-4.74-16.06,1.23-22l22.5-22.5c11.43-11.46,13.75-29.16,5.67-43.19L108.23,17.94C98.37,0.81,76.5-5.08,59.37,4.78
+			c-2.72,1.57-5.23,3.49-7.45,5.71l-33.93,33.9c-23.63,23.66-24,66.95-1,121.88c22,52.81,63.26,110.96,116,163.73
+			s110.9,94,163.72,116.06c27,11.31,51.26,17,71.7,17c21.09,0,38.16-6,50.18-18l33.9-33.9c7.9-7.85,11.67-18.96,10.17-30
+			L462.68,381.09z M323.35,302l114.23,65.77c9.95,5.73,13.37,18.43,7.64,28.38c-0.39,0.68-0.82,1.34-1.29,1.97l-151.81-86.64
+			l6.17-6.16C304.94,298.68,315.21,297.32,323.35,302z M79.99,15.19c6.4,0.83,12.04,4.62,15.24,10.23l65.76,114.23
+			c4.68,8.15,3.31,18.41-3.32,25.06l-5.68,5.67L64.91,19.07C68.45,16.43,72.75,15,77.17,15c0.93,0,1.86,0.07,2.78,0.19H79.99z
+			 M407.99,434.38c-18.8,18.79-57.24,18-105.48-2.17c-51.05-21.35-107.52-61.42-158.89-112.83S52.14,211.54,30.79,160.48
+			C10.61,112.24,9.83,73.8,28.62,55l25.17-25.17l87.25,151.53l-5.86,5.85c-11.38,11.36-12.38,29.46-2.31,42
+			c14.96,18.55,30.9,36.28,47.77,53.11c16.83,16.87,34.56,32.81,53.11,47.77c12.54,10.07,30.65,9.07,42-2.32l5.33-5.33l152,86.75
+			L407.99,434.38z"/>
+	</g>
+</g>
+</svg>
+                <span class="bottom-text" href="tel:+78412394553">8(8412)394-553</span>
+            </div>
+            <div class="col-xl-3 col-lg-3 mail">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="474.01px" height="332.38px" viewBox="0 0 474.01 332.38" style="enable-background:new 0 0 474.01 332.38;"
+                     xml:space="preserve" class="icon mail__img">
+                    <defs>
+</defs>
+                    <g>
+	<g id="Layer_1_1_">
+		<path class="st0" d="M474,7c0.01-0.07,0.01-0.13,0-0.2C474,6.67,474,6.55,474,6.42c-0.05-0.55-0.16-1.1-0.33-1.63
+			c0-0.07,0-0.15-0.05-0.22s0-0.06-0.05-0.09c-0.23-0.58-0.53-1.13-0.91-1.63c-0.08-0.11-0.17-0.21-0.26-0.32
+			c-0.37-0.44-0.78-0.84-1.24-1.18L471,1.22c-0.51-0.34-1.07-0.61-1.65-0.8l-0.4-0.13C468.32,0.1,467.66,0.01,467,0H7
+			C6.36,0.01,5.71,0.11,5.09,0.29l-0.4,0.13C4.1,0.61,3.53,0.88,3,1.22C2.96,1.25,2.91,1.29,2.87,1.33
+			C2.42,1.67,2.02,2.07,1.66,2.51L1.39,2.83c-0.37,0.5-0.68,1.05-0.91,1.63c0,0,0,0.06,0,0.09s0,0.15,0,0.22
+			C0.27,5.29,0.13,5.84,0.06,6.4c0,0.13,0,0.25,0,0.38S0,6.91,0,7v318.44c0,0.09,0,0.19,0,0.28c0,0.25,0,0.5,0.07,0.75
+			s0.06,0.4,0.11,0.61c0.06,0.24,0.14,0.48,0.23,0.71c0.06,0.19,0.13,0.38,0.21,0.56c0.11,0.23,0.24,0.46,0.37,0.69l0.3,0.47
+			c0.16,0.21,0.33,0.42,0.5,0.61l0.4,0.42c0.09,0.08,0.15,0.17,0.24,0.25s0.14,0.07,0.21,0.12c0.55,0.42,1.16,0.76,1.81,1
+			c0.14,0.05,0.28,0.1,0.42,0.13c0.65,0.21,1.32,0.33,2,0.34c0,0,0.09,0,0.14,0H467c0.05,0,0.09,0,0.13,0
+			c0.68-0.01,1.35-0.13,2-0.34c0.14-0.03,0.27-0.07,0.4-0.13c0.65-0.24,1.26-0.58,1.81-1c0.07-0.05,0.15-0.07,0.21-0.12
+			s0.15-0.17,0.24-0.25c0.14-0.13,0.27-0.27,0.4-0.42c0.17-0.19,0.34-0.4,0.5-0.61l0.3-0.47c0.13-0.23,0.26-0.46,0.37-0.69
+			c0.08-0.18,0.15-0.37,0.21-0.56c0.09-0.23,0.17-0.47,0.23-0.71c0.05-0.2,0.07-0.4,0.11-0.61s0.06-0.5,0.07-0.75s0-0.18,0-0.28
+			L474,7z M164.2,151.5l68.24,58.71c2.62,2.26,6.51,2.26,9.13,0l68.23-58.71l142.05,167H22.14L164.2,151.5z M14,306.42V22.24
+			l139.6,120.11L14,306.42z M320.4,142.35L460,22.24v284.18L320.4,142.35z M448.11,14l-142,122.21l-0.08,0.05l-0.08,0.08l-69,59.33
+			L168,136.32c-0.03-0.02-0.06-0.05-0.08-0.08l-0.08-0.05L25.85,14H448.11z"/>
+	</g>
+</g>
+</svg>
+                <span class="bottom-text" href="mail:gb58@inbox.ru">gb58@inbox.ru</span>
+            </div>
+        </div>
+        <div class="shadow">
+        </div>
         <div class="modal-window">
-             <span class="modal-window__cross" onclick="show_off(0)">&times;</span>
+            <span class="modal-window__cross" onclick="show_off(0)">&times;</span>
             <p class="modal-window__title">Получить скидку 50% на услуги бухгалтера</p>
-            <form action="">
+            <form action="" onsubmit="return false;">
                 <input type="text" placeholder="Ваше имя" class="text-input">
-                <input type="text" placeholder="Телефоне" class="text-input">
-                <p class="modal-window__privaci">Отправляя данные, я согласен с Политикой обработки персональных данных</p>
-                <input type="button" class="modal-window__button" value="Отправить">
+                <input type="text" placeholder="Телефоне" class="text-input" required>
+                <p class="modal-window__privaci">Отправляя данные, я согласен с Политикой обработки персональных
+                    данных</p>
+                <input type="submit" class="modal-window__button" value="Отправить">
             </form>
         </div>
-          <div class="modal-window thank">
-             <span class="modal-window__cross" onclick="show_off(1)">&times;</span>
+        <div class="modal-window thank">
+            <span class="modal-window__cross" onclick="show_off(1)">&times;</span>
             <p class="modal-window__title">Спасибо!</p>
             <p class="thank__text">
                 Мы скоро перезвоним Вам для уточнения деталей.
             </p>
         </div>
         <div class="arrow">&darr;</div>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/script.min.js"></script>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
